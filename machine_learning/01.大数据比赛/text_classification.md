@@ -51,3 +51,8 @@ cross_val_score(forest,X=train_data_features,y=df.Score,scoring=rmse_scoring,cv=
 5.Cache命中率优化<br>
 6.基于直方图的稀疏特征优化<br>
 7.多线程优化
+
+**跑tensorflow rnn时的坑**<br>
+
+dtype有问题！
+![dtype_problem.png](dtype_problem.png)

@@ -1,20 +1,32 @@
 ## 一级目录
 
-[**1.一折blending**](#一折blending)
+[**0. 衡量标准(准确率，召回率)**](#衡量标准)
 
-[**2. 二折blending**](#二折blending)
+[**1.经验参数**](#经验参数)
 
-[**3. 模型融合**](#模型融合)
+[**2.一折blending**](#一折blending)
 
-[**4. 规则**](#规则)
+[**3. 二折blending**](#二折blending)
 
-[**5. xgb调参**](#xgb调参)
+[**4. 模型融合**](#模型融合)
 
-[**6. WOE, IV(information value)来选取离散特征重要性**](#woe_iv选取离散特征重要性)
+[**5. 规则**](#规则)
 
-[**7. xxx用法**](#xxx用法)
+[**6. xgb调参**](#xgb调参)
+
+[**7. WOE, IV(information value)来选取离散特征重要性**](#woe_iv选取离散特征重要性)
+
+[**8. xxx用法**](#xxx用法)
 
 ---
+
+### 衡量标准
+
+![precision_recall.png](precision_recall.png)
+
+### 经验参数
+
+![param.png](param.png)
 
 ### 一折blending 
 

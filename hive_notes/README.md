@@ -1,14 +1,41 @@
 # 主目录
 
-[**1. hive创建表（数据量不大）**](#hive创建表的另一种方式)
+[**1. pyspark kill hive命令操作**](#kill命令)
 
-[**2. hive生成临时表**](#hive生成临时表)
+[**2. 数据文件放hive**](#数据文件放hive)
 
-[**3. hive增加一列index**](#hive增加一列index)
+[**3. hive创建表（数据量不大）**](#hive创建表的另一种方式)
 
-[**4. hive显示一列ArrayType**](#hive显示一列arraytype)
+[**4. hive生成临时表**](#hive生成临时表)
+
+[**5. hive增加一列index**](#hive增加一列index)
+
+[**6. hive显示一列ArrayType**](#hive显示一列arraytype)
 
 ---
+
+## kill命令
+
+```python
+# -*- coding: utf-8 -*-
+import os
+
+app = 'application_152154389x962_9769x33'
+cmd = 'yarn application -kill {}'.format(app)
+os.system(cmd)
+```
+
+## 数据文件放hive
+
+将本地文件放入hive中，因为我们部门没有xshell运维权限，所以无法直接上传文件到hdfs或者hive中。可以用如下方法： 写一个.py的脚本<br>
+```python
+# -*- coding: utf-8 -*-
+import os
+cmd = "hadoop fs -mkdir /user/xxxxx/bz_addr"
+os.system(cmd)
+cmd = "hadoop fs -put aa.py /user/xxxxxx/bz_addr"
+os.system(cmd)
+```
 
 ## hive创建表的另一种方式
 ```sql
