@@ -1,6 +1,6 @@
 # 深度学习
 
-[**0. 基础（蚂蚁笔记）**](https://leanote.com/note/5a2741edf40b55511b000000)
+[**0. 深度学习（蚂蚁笔记）**](https://leanote.com/note/5a2741edf40b55511b000000)
 
 [**1. 在不同的划分上进行训练并测试**](1.train_test)
 
