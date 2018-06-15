@@ -46,5 +46,5 @@ pypi搜索tensorflow gpu [官网下载](https://pypi.org/project/tensorflow-gpu/
 ```
 
 ### refer
-https://blog.csdn.net/XCCCCZ/article/details/80385448
+https://blog.csdn.net/XCCCCZ/article/details/80385448 <br>
 https://blog.csdn.net/sb19931201/article/details/53648615
