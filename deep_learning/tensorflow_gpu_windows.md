@@ -35,8 +35,8 @@ tensorflow-gpu，1.7.0；<br>
 
 ### 7. 然后安装tensorflow gpu版
 
-可以pip install tensorflow-gpu或者去
-pypi搜索tensorflow gpu [官网下载](https://pypi.org/project/tensorflow-gpu/#history) <br>
+pip install tensorflow-gpu <br>
+或者pypi搜索tensorflow gpu [官网下载](https://pypi.org/project/tensorflow-gpu/#history) <br>
 我这里下载了tensorflow-gpu==1.7.0
 
 ### 8. 查看GPU使用情况
