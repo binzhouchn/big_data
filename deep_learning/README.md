@@ -14,5 +14,15 @@
 
 [**5. RNN入门**](5.rnn)
 
+[**6. 参数选择**](#参数选择)
+
 ## tensorflow gpu配置
 [windows深度学习gpu配置(tensorflow)](tensorflow_gpu_windows.md)
+
+---
+
+### 参数选择
+
+ - batch size：根据gpu大小定，一般越小最后效果会越好；但也不能太小，容易过拟合；32，64,128可以试试
+ - kernel size：根据任务调，3,5,7等
+
