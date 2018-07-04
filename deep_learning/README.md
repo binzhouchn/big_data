@@ -21,6 +21,10 @@
 
 ---
 
+###
+
+[CS2311n Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/)
+
 ### 参数选择
 
 #### batch size：根据gpu大小定，一般越小最后效果会越好；但也不能太小，容易过拟合；32，64，128可以试试<br>
