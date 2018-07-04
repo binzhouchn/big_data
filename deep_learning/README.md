@@ -21,9 +21,11 @@
 
 ---
 
-###
+### 深度学习国外优秀课程
 
 [CS2311n Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/)
+
+[deeplearning.ai coursera](https://www.coursera.org/specializations/deep-learning)
 
 ### 参数选择
 
