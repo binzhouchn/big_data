@@ -4,28 +4,32 @@
 
 [**0. 深度学习（蚂蚁笔记）**](https://leanote.com/note/5a2741edf40b55511b000000)
 
-[**1. 在不同的划分上进行训练并测试**](1.train_test)
+[**1. 深度学习国内外优秀课程**](#深度学习国内外优秀课程)
 
-[**2. 反向传播算法入门资料链接**](2.backpropagation)
+[**2. 在不同的划分上进行训练并测试**](1.train_test)
 
-[**3. 手动构建浅、深神经网络**](3.nn_scratch)
+[**3. 反向传播算法入门资料链接**](2.backpropagation)
 
-[**4. CNN入门**](4.cnn)
+[**4. 手动构建浅、深神经网络**](3.nn_scratch)
 
-[**5. RNN入门**](5.rnn)
+[**5. CNN入门**](4.cnn)
 
-[**6. 参数选择**](#参数选择)
+[**6. RNN入门**](5.rnn)
+
+[**7. 参数选择**](#参数选择)
 
 ## tensorflow gpu配置
 [windows深度学习gpu配置(tensorflow)](tensorflow_gpu_windows.md)
 
 ---
 
-### 深度学习国外优秀课程
+### 深度学习国内外优秀课程
 
 [CS2311n Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/)
 
 [deeplearning.ai coursera](https://www.coursera.org/specializations/deep-learning)
+
+[paddlepaddle](http://ai.baidu.com/paddlepaddle)
 
 ### 参数选择
 
