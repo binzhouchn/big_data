@@ -50,3 +50,11 @@
  
 #### kernel size：根据任务调，3，5，7等
 
+#### 隐藏层之间为什么很少使用sigmoid函数
+
+[cs231n 激活函数](https://cs231n.github.io/neural-networks-1/)
+
+1) Sigmoids saturate and kill gradients.<br>
+2) Sigmoid outputs are not zero-centered.<br>
+
+
