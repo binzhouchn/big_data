@@ -33,7 +33,7 @@
 
 ### 参数选择
 
-#### batch size：根据gpu大小定，一般越小最后效果会越好；但也不能太小，容易过拟合；32，64，128可以试试<br>
+#### 7.1 batch size：根据gpu大小定，一般越小最后效果会越好；但也不能太小，容易过拟合；32，64，128可以试试<br>
  
  [如果数据集比较小，完全可以采用全数据集]<br>
    - 由全数据集确定的方向能够更好地代表样本总体，从而更准确地朝向极值所在的方向<br>
@@ -48,9 +48,9 @@
  [传送链接1](https://blog.csdn.net/s_sunnyy/article/details/65445197)<br>
  [传送链接2](https://blog.csdn.net/qq_20259459/article/details/53943413)
  
-#### kernel size：根据任务调，3，5，7等
+#### 7.2 kernel size：根据任务调，3，5，7等
 
-#### 隐藏层之间为什么很少使用sigmoid函数
+#### 7.3 隐藏层之间为什么很少使用sigmoid函数
 
 [cs231n 激活函数](https://cs231n.github.io/neural-networks-1/)
 
