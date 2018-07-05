@@ -57,4 +57,7 @@
 1) Sigmoids saturate and kill gradients.<br>
 2) Sigmoid outputs are not zero-centered.<br>
 
+#### 7.4 防止过拟合应该用最小的网络么
 
+答案是否定的，The takeaway is that you should not be using smaller networks because you are afraid of overfitting. Instead, you should use as big of a neural network as your computational budget allows, and use other regularization techniques(such as L2 regularization, dropout, input noise) to control overfitting.<br>
+这样得到的网络泛化能力是最好的。
