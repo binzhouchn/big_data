@@ -9,6 +9,7 @@
 
 [5. **rnn loss function**](#rnn_loss_function)
 
+[6. **LSTM三种不同架构图及映射关系**](#lstm三种不同架构图及映射关系)
 
 ## RNN_Basics
 
@@ -119,3 +120,9 @@ RNNs之所以称为循环神经网路，即一个序列当前的输出与前面�
 
 tf.nn.sparse_softmax_cross_entropy_with_logits<br>
 这个函数和tf.nn.softmax_cross_entropy_with_logits函数比较明显的区别在于它的参数labels的不同，这里的参数label是非稀疏表示的，比如表示一个3分类的一个样本的标签，稀疏表示的形式为[0,0,1]这个表示这个样本为第3个分类，而非稀疏表示就表示为2（因为从0开始算，0,1,2,就能表示三类），同理[0,1,0]就表示样本属于第二个分类，而其非稀疏表示为1。tf.nn.sparse_softmax_cross_entropy_with_logits（）比tf.nn.softmax_cross_entropy_with_logits多了一步将labels稀疏化的操作。因为深度学习中，图片一般是用非稀疏的标签的，所以用tf.nn.sparse_softmax_cross_entropy_with_logits（）的频率比tf.nn.softmax_cross_entropy_with_logits高。
+
+## lstm三种不同架构图及映射关系
+
+![lstm_structure](lstm_structure.jpg)
+
+[lstm详解地址](https://www.zhihu.com/question/41949741?sort=created)
