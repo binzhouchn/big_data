@@ -1,4 +1,3 @@
-
 [1. **RNN Basics**](#rnn_basics)
 
 [2. **Embedding Matrix**](#embedding_matrix)
