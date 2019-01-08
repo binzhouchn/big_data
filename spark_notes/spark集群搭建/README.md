@@ -1,17 +1,8 @@
-# spark笔记
+# spark集群搭建
 
-> 版本：0.0.2<br>
-> 作者：binzhou<br>
-> 邮件：binzhouchn@gmail.com<br>
+[java version "1.8.0_171"](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html)<br>
+[Scala version 2.11.8](https://www.scala-lang.org/download/2.11.8.html)
 
-[pyspark官网](http://spark.apache.org/docs/latest/api/python/pyspark.html)
+hostname不一定要master，slave这种取法，可以自己定<br>
+1-3步骤即**无密码访问**和**安装java和scala**可以参照[返回主页 小狼咕咕](https://www.cnblogs.com/zengxiaoliang/p/6478859.html)<br>
 
-[spark集群搭建](https://www.cnblogs.com/zengxiaoliang/p/6478859.html)
-
-# 主目录
-
-[**1. pyspark**](01.pyspark)
-
-[**2. spark scala**](02.spark_scala)
-
-[**spark集群搭建**]()
