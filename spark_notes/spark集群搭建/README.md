@@ -14,3 +14,9 @@
 **有两个坑注意下：**
  - 启动不了datanode，[解决链接](https://blog.csdn.net/ss762349239/article/details/52758064)
  - 启动了两个datanode，但hadoop管理界面都看到只有一个datanode，[解决链接](https://blog.csdn.net/baidu_19473529/article/details/52996380)
+ 
+
+附录：
+
+hadoop管理界面地址(一般): ip_addresss:50070<br>
+spark Master界面(一般): ip_addresss:8080
