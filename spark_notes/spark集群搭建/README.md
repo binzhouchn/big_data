@@ -10,6 +10,7 @@
 2. 1-3步骤即**无密码访问**和**安装java和scala**可以参照[小狼咕咕](https://www.cnblogs.com/zengxiaoliang/p/6478859.html)<br>
 3. 从hadoop和spark解压完后开始，参照[spark2.3.1集群模式搭建 从第7点开始](https://blog.csdn.net/p_q_hersen/article/details/81394095)<br>
 4. 补充一点spark/conf/中的slave文件中也要加上slave用户名同hadoop slave<br>
-有两个坑注意下：
+
+**有两个坑注意下：**
  - 启动不了datanode，[解决链接](https://blog.csdn.net/ss762349239/article/details/52758064)
  - 启动了两个datanode，但hadoop管理界面都看到只有一个datanode，[解决链接](https://blog.csdn.net/baidu_19473529/article/details/52996380)
