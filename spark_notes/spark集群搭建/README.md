@@ -40,7 +40,17 @@ spark Master界面(一般): ip_addresss:8080
 先启动hadoop/sbin中的start-all.sh<br>
 再启动spark/sbin中的start-all.sh
 
-spark提交：./spark-submit --master spark://10.xx.4.xx:7077 /opt/algor/zhoubin/software/w2v_test.py
+spark提交：./spark-submit --master spark://10.xx.4.xx:7077 /opt/algor/zhoubin/software/w2v_test.py <br>
+jupyter中设置：<br>
+```python
+spark=SparkSession\
+.builder\
+.appName("Word2Vec")\
+.master('spark://10.xxx.4.xx:7077') \
+.config("spark.some.config.option","some-value")\
+.getOrCreate()
+```
+
 
 ### 有几个注意点
 
