@@ -1,4 +1,4 @@
-# spark集群搭建
+# I. 完全分布式spark集群搭建
 
 ### 预装软件下载
 
@@ -31,7 +31,7 @@ spark Master界面(一般): ip_addresss:8080
 
 
 
-# 单台机器上spark搭建 linux user
+# II. 单台机器上spark搭建 linux user
 
 1. 首先在.bashrc下加入java和scala路径<br>
 2. 在hadoop/etc/hadoop文件中配置core-site.xml, slave和hdfs-site.xml文件<br>
