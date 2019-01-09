@@ -37,4 +37,9 @@ spark Master界面(一般): ip_addresss:8080
 2. 在hadoop/etc/hadoop文件中配置core-site.xml, slave和hdfs-site.xml文件<br>
 3. 在spark/conf文件中配置core-site.xml, hive-site.xml, hdfs-site.xml, slaves, spark-env.sh<br>
 
+先启动hadoop/sbin中的start-all.sh<br>
+再启动spark/sbin中的start-all.sh
+
+### 有几个坑
+
 
