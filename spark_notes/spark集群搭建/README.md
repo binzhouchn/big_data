@@ -40,6 +40,8 @@ spark Master界面(一般): ip_addresss:8080
 先启动hadoop/sbin中的start-all.sh<br>
 再启动spark/sbin中的start-all.sh
 
+spark提交：./spark-submit --master spark://10.xx.4.xx:7077 /opt/algor/zhoubin/software/w2v_test.py
+
 ### 有几个注意点
 
 1. jupyter中实例化spark报错，Java gateway process exited before sending the driver its port number,[解决链接](https://blog.csdn.net/a2099948768/article/details/79580634)
@@ -61,3 +63,8 @@ hdfs dfs -put sample_libsvm_data.txt /test
 training=spark.read.format('libsvm').load('hdfs://10.xx.4.xx:9000/test/sample_libsvm_data.txt')
 ```
 
+3. java.io.IOException: No space left on device<br>
+spark/conf/spark-env.sh中加入
+```
+export SPARK_LOCAL_DIRS=spark.local.dir /opt/algor/zhoubin/software/spark-2.3.0-bin-hadoop2.7/sparktmp
+```
