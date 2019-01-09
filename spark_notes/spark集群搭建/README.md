@@ -31,6 +31,6 @@ spark Master界面(一般): ip_addresss:8080
 # 单台机器上spark搭建 linux user
 
 1. 首先在.bashrc下加入java和scala路径<br>
-2. 在hadoop/etc/hadoop文件中配置slave和hdfs-site.xml文件<br>
+2. 在hadoop/etc/hadoop文件中配置core-site.xml, slave和hdfs-site.xml文件<br>
 3. 在spark/conf文件中配置core-site.xml, hive-site.xml, hdfs-site.xml, slaves, spark-env.sh<br>
 
