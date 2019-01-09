@@ -18,6 +18,8 @@
  - Unable to load native-hadoop library, [解决链接](https://www.jianshu.com/p/f25a0caafcc6)
  - 启动不了datanode，[解决链接](https://blog.csdn.net/ss762349239/article/details/52758064)
  - 启动了两个datanode，但hadoop管理界面都看到只有一个datanode，[解决链接](https://blog.csdn.net/baidu_19473529/article/details/52996380)
+ - jupyter中实例化spark报错，Java gateway process exited before sending the driver its port number,[解决链接](https://blog.csdn.net/a2099948768/article/details/79580634)
+ 
  
 
 
