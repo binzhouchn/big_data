@@ -40,6 +40,24 @@ spark Master界面(一般): ip_addresss:8080
 先启动hadoop/sbin中的start-all.sh<br>
 再启动spark/sbin中的start-all.sh
 
-### 有几个坑
+### 有几个注意点
 
+1. jupyter中实例化spark报错，Java gateway process exited before sending the driver its port number,[解决链接](https://blog.csdn.net/a2099948768/article/details/79580634)
+```python
+import os
+os.environ["JAVA_HOME"] = "/opt/algor/zhoubin/software/jdk1.8.0_171"
+```
+2. 读取hdfs
+```
+# 查看根目录
+hdfs dfs -ls /
+# 创建文件
+hdfs dfs -mkdir /test
+# 把本地文件放上去
+hdfs dfs -put sample_libsvm_data.txt /test
+```
+```python
+# 读取hdfs中的文件
+training=spark.read.format('libsvm').load('hdfs://10.xx.4.xx:9000/test/sample_libsvm_data.txt')
+```
 
