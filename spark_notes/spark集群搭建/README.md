@@ -71,6 +71,7 @@ hdfs dfs -put sample_libsvm_data.txt /test
 ```python
 # 读取hdfs中的文件
 training=spark.read.format('libsvm').load('hdfs://10.xx.4.xx:9000/test/sample_libsvm_data.txt')
+# spark.read.text() #读取txt文件
 ```
 
 3. java.io.IOException: No space left on device<br>
