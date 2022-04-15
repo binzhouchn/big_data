@@ -215,6 +215,29 @@ df_raw = spark.table('fbd.bz_all_tmp')
 spark_df = spark_df.select(spark_df['city'],spark_df['community_org'],spark_df['community'],\
 spark_df['longitude'],spark_df['latitude'],(explode(split('address',','))).alias('address'),spark_df['villagekey'])
 ```
+```python
+#PySpark将datafram中“map”类型的列转换为多个列:https://www.cnpython.com/qa/69046
+
+from pyspark.sql.functions import explode, split
+from pyspark.sql.functions import col
+from pyspark.sql.types import IntegerType, StringType, FloatType, DoubleType, MapType
+import json
+'''
+databox='[{"productId":92,"productName":"xx医疗保险","description":"xxx设计的医疗保险","personalized":true,"soldCount":2000,"databox":"uuid=oDxxR0LLtI&applicant=1#564xx27#柳红#1974-12-21 00:00:00#F&applicantMd5=95d79131f538dbbf6c4&applicantProductId=24&sendCode=0041248305&agentCode=000258&businessId=wxxc&sceneId=accxpt&abtestId=v2020_01_01&abgroupId=2&productId=992&algoId=top_k"}]'
+'''
+@udf(returnType=MapType(StringType(), StringType()))
+def dbx_analy1(x):
+    res = {}
+    dx = json.loads(x)[0]
+    _d = dx.pop('databox')
+    dx.update(**{i:j for i,j in [x.split('=') for x in _d.split('&')]})
+    return dx
+df3 = df2.select(*cols, dbx_analy1('databox').alias('databox_map'))
+keys = (df3.select(explode("databox_map")).select("key").distinct().rdd.flatMap(lambda x : x).collect())
+exprs = [col('databox_map').getItem(k).alias(k) for k in keys]
+df4 = df3.select(*cols, *exprs)
+```
+
 ### udf用法
 
 **用法一**   
