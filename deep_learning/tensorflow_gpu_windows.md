@@ -45,6 +45,10 @@ pip install tensorflow-gpu <br>
 "C:\Program Files\NVIDIA Corporation\NVSMI\nvidia-smi.exe" -l 10
 ```
 
+### 9. linux上NVIDIA驱动安装报错，Nouveau used错误
+
+[Ubuntu 19.04 server版本安装RTX 2070显卡驱动错误：The Nouveau kernel driver is currently in use by your system.](https://www.jianshu.com/p/f166849ea13a)
+
 ### refer
 https://blog.csdn.net/XCCCCZ/article/details/80385448 <br>
 https://blog.csdn.net/sb19931201/article/details/53648615
